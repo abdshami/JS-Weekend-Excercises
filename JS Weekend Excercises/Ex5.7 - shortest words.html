@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       function shortWord(str){
+
+             
+            let str1 = [];
+          
+           // let newStr ='';
+            
+            
+            str1 = str.split(' ');
+            let min = str1[0].length;
+
+            for( let i=1; i<str1.length ; i++){
+
+              min =   str1[i].length < min ? str1[i].length : min;
+                 
+            }
+          return min;
+       }
+
+       console.log(shortWord('khaldoun takrouri went to the school every day'));
+
+       console.log(shortWord('Good Moorning teather'));
+
+    </script>
+</body>
+</html>

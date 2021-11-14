@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+
+         let arr1 = [ 9936353,6 , 345344, 343,98];
+         let arrMin = [];
+         let sum = 0;
+
+         function sum2Min(arr){
+                let min = arr[0];
+                for(let i=1 ; i<arr.length ;i++){
+                    if (arr[i] < min ) {
+                        min = arr[i];
+                        arr.splice(i, 1); 
+                    }    
+                }
+                arrMin.push(min);
+                
+
+                  if (arrMin.length >= 2){
+                      arrMin.forEach(e => {
+                             sum += e;
+                      })
+
+                      return ;
+                      
+                  }
+                   
+                  sum2Min(arr);   
+                  
+                  return sum;
+          }
+      
+          console.log(sum2Min(arr1));
+
+
+    </script>
+
+</body>
+</html>

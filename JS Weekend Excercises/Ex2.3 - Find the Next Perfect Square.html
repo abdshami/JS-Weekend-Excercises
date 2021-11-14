@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+function findNextSquare(num){
+            
+            let numSqurt = Math.sqrt(num);
+            let temp;
+
+            
+
+            if( numSqurt % 1 === 0 ){
+                    numSqurt++ 
+                    
+            }else{
+                numSqurt = 0;
+            }  
+
+            if (numSqurt) {
+                temp = numSqurt**2 ;
+              
+            }else{
+                temp = 1;
+            }
+           return temp;
+
+}
+
+
+
+console.log( findNextSquare(121));
+
+console.log( findNextSquare(114));
+
+
+
+    </script>
+    
+</body>
+</html>

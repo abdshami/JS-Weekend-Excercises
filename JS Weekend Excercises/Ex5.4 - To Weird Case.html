@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function toWeirdCase(str){
+           
+               let words2 = [];
+ 
+               let sentance = [];
+               
+        
+
+               words = str.split(' ');
+    
+
+
+            for(let i=0 ; i<words.length ;i++){
+            
+                   for(let j=0 ; j<words[i].length ; j++){
+                              if (j % 2 === 0){
+                                words2.push(words[i][j].toUpperCase());
+                               
+                              }else{
+                                words2.push( words[i][j]);
+                               
+                              }
+                   }
+                   
+                   let words22 = words2.join('');
+                   words2 = [];
+                   sentance.push(words22);
+                   
+                     
+            }
+         
+           let  sentance22 = sentance.join(' ');
+           return sentance22;
+           
+
+       }
+
+      console.log( toWeirdCase('hi khaldoun takrouri'));
+
+    </script>
+</body>
+</html>

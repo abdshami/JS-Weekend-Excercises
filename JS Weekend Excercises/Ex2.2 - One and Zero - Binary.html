@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+    function binaryToInt(arr){
+     
+        let c = 1000;
+        sum = 0;
+
+        for( let i=arr.length-1 ; i >= 0 ; i--){
+                sum += (arr[i] * c);
+                c /= 10;
+        }        
+    
+
+            console.log(sum);
+
+        switch(sum ){
+
+                case 1 : 
+                return 1;
+                break;
+                case 10 : 
+                return 2;
+                break;   
+                case 101 : 
+                return 5;
+                break;
+                case 1001 : 
+                return 9;
+                break;
+                case 110 : 
+                return 6;
+                break; 
+                case 1111 : 
+                return 15;
+                break;
+                case 1011 : 
+                return 11;
+              
+          
+        }
+        
+    }
+
+    console.log(binaryToInt([1,1,1,1]));
+
+    console.log(binaryToInt([0,1,1,0]));
+
+    </script>
+    
+</body>
+</html>
